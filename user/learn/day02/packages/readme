@@ -1,0 +1,2 @@
+包的默认安装路径是执行npm文件夹下的node_modules目录；
+全局模式会安装到/user/local/lib/node_modules/ , 并会加入到环境变量中
