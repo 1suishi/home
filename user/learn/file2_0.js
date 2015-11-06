@@ -41,8 +41,7 @@ function validateFiles(pathnames, callback) {
             callback(null, pathnames);
         }
     }(0, pathnames.length));
-}
-
+} 
 
 
 function main(argv){
