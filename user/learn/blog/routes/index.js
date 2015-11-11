@@ -10,4 +10,8 @@ router.get('/hello', function(req, res, next) {
   res.send("the is the test route");
 });
 
+router.get("/user/:username",function(req,res){
+	res.send("user:" + req.params.username);
+})
+
 module.exports = router;
