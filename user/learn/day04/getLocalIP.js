@@ -34,20 +34,21 @@ var os=require('os');
 //不足：foreach 不能break 结束
 
 // 解释:
-// 	foreach 中 回调函数的返回值 是回调函数的返回值，不是真个函数的返回值
+// 	foreach 中 回调函数的返回值 是回调函数的返回值，不是整个函数的返回值
 // 	新手注意
 
 	function getIp3(callback){
 		var ifaces=os.networkInterfaces();
 		var re ;
 		for (var dev in ifaces) {
-		  ifaces[dev].forEach(function(details){
-		    if (details.family=='IPv4' && details.address !="127.0.0.1") {
-		    	//console.log(details.address);		    	 
-		    	re = details.address;
-		    	return;
-		    }
-		  });
+			ifaces[dev].forEach(function(details){
+				if (details.family=='IPv4' && details.address !="127.0.0.1") {
+					//console.log(details.address);		    	 
+					re = details.address;
+				}
+				return;
+			});
+		    
 		}
 		return re;
 	}
