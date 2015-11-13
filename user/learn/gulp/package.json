@@ -1,0 +1,14 @@
+{
+  "name": "gulp",
+  "version": "0.0.1",
+  "description": "this is a test for gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "benniuo",
+  "license": "ISC"
+}
