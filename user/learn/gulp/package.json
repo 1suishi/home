@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "test",
   "version": "0.0.1",
   "description": "this is a test for gulp",
   "main": "index.js",
@@ -10,5 +10,9 @@
     "gulp"
   ],
   "author": "benniuo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.4"
+  }
 }
